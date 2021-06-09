@@ -24,9 +24,23 @@ The project is purely for education purposes and thus strongly based on already 
 * [Wav2Lip](https://github.com/Rudrabha/Wav2Lip)
 
 
-# Colab
+# Facemask detection
 
-The code is implemented in colab, to project should be fully able to work as stand alone in Colab.
-Do to contribution, you can edit in colab - click file - save a copy in github. 
+The code is implemented in colab, the project should be fully able to work as stand alone in Colab.
 
 The trained models are here in the git and will be uploaded in the notebook at Colab.
+
+It will detect the facemask and place a mouth on top of it
+
+![](doc/Media5.gif)
+
+# Run wave2lip
+
+In the next part the face is synced to the sound. For this the [Wav2Lip](https://github.com/Rudrabha/Wav2Lip) is used.
+This is not (yet) in Colab but runs locally. 
+
+```
+python inference.py --checkpoint_path C:\Users\Jasper\Desktop\intelligent-interfaces\Wav2Lip-master\Wav2Lip-master\checkpoints\wav2lip_gan.pth --face C:\Users\Jasper\Desktop\intelligent-interfaces\Wav2Lip-master\Media9.mp4 --audio C:\Users\Jasper\Desktop\intelligent-interfaces\Wav2Lip-master\bazigar_part1.wav
+```
+
+![](doc/result_voice5.gif)
